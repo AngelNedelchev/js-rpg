@@ -51,14 +51,14 @@ let GameManager = {
                 break;
             case 1:
                 enemy = enemy01;
-                break;
+                break;       
         }
         getHeader.innerHTML = '<p>Task: Choose your move!</p>';
         getActions.innerHTML = '<a href="#" class="btn-prefight" onclick="PlayerMoves.calcAttack()">Attack!</a>';
         getEnemy.innerHTML = '<img src="img/enemy/' +
-        enemy.enemyType + '.jpg" class="img-avatar"><div><h3>' + enemy.enemyType
-        + '</h3><p>Health: ' + player.health + '</p><p>Mana: ' + player.mana 
-        + '</p><p>Strength: ' + player.strength + '</p><p>Agility: ' + player.agility 
-        + '</p><p>Speed: ' + player.speed + '</p></div>';
+        enemy.enemyType.toLowerCase() + '.jpg" class="img-avatar"><div><h3>' + enemy.enemyType 
+        + '</h3><p>Health: ' + enemy.health + '</p><p>Mana: ' + enemy.mana 
+        + '</p><p>Strength: ' + enemy.strength + '</p><p>Agility: ' + enemy.agility 
+        + '</p><p>Speed: ' + enemy.speed + '</p></div>';
     }
 }
