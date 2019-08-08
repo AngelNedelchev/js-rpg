@@ -54,7 +54,7 @@ let playerMoves = {
         let totalDamage = playerAttackValues[0] * playerAttackValues[1];
         enemy.health = enemy.health - totalDamage;
             //HIT
-        document.getElementById("player-damage").innerHTML = ("You hit " + playerAttackValues[0] + " damage " + playerAttackValues[1] + " times. " + "DPS done this round: " + playerAttackValues[0] * playerAttackValues[1] + "");
+        document.getElementById("player-damage").innerHTML = ("You hit " + playerAttackValues[0] + " damage " + playerAttackValues[1] + " times. " + "Damage done this round: " + playerAttackValues[0] * playerAttackValues[1] + "");
         
         if (enemy.health <= 0) {
             //WON
@@ -69,7 +69,7 @@ let playerMoves = {
             
             let totalDamage = enemyAttackValues[0] * enemyAttackValues[1];
             player.health = player.health - totalDamage;
-            document.getElementById("enemy-damage").innerHTML = ("Enemy hit " + enemyAttackValues[0] + " damage " + enemyAttackValues[1] + " times. " + "DPS done this round: " + enemyAttackValues[0] * enemyAttackValues[1] + "");
+            document.getElementById("enemy-damage").innerHTML = ("Enemy hit " + enemyAttackValues[0] + " damage " + enemyAttackValues[1] + " times. " + "Damage done this round: " + enemyAttackValues[0] * enemyAttackValues[1] + "");
             
             if (player.health <= 0) {
                 //LOST
@@ -85,7 +85,7 @@ let playerMoves = {
         let enemyAttackValues = enemyAttack();
         let totalDamage = enemyAttackValues[0] * enemyAttackValues[1];
         player.health = player.health - totalDamage;
-        document.getElementById("enemy-damage").innerHTML = ("Enemy hit " + enemyAttackValues[0] + " damage " + enemyAttackValues[1] + " times. " + "DPS done this round: " + enemyAttackValues[0] * enemyAttackValues[1] + "");
+        document.getElementById("enemy-damage").innerHTML = ("Enemy hit " + enemyAttackValues[0] + " damage " + enemyAttackValues[1] + " times. " + "Damage done this round: " + enemyAttackValues[0] * enemyAttackValues[1] + "");
         if (player.health <= 0) {
             //LOST
             document.getElementById("lost").innerHTML = ("You lost !");
@@ -99,7 +99,7 @@ let playerMoves = {
             
             let totalDamage = playerAttackValues[0] * playerAttackValues[1];
             enemy.health = enemy.health - totalDamage;
-            document.getElementById("player-damage").innerHTML = ("You hit " + playerAttackValues[0] + " damage " + playerAttackValues[1] + " times. " + "DPS done this round: " + playerAttackValues[0] * playerAttackValues[1] + "");
+            document.getElementById("player-damage").innerHTML = ("You hit " + playerAttackValues[0] + " damage " + playerAttackValues[1] + " times. " + "Damage done this round: " + playerAttackValues[0] * playerAttackValues[1] + "");
             
             if (enemy.health <= 0) {
                 //WON
