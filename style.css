@@ -23,6 +23,7 @@ img {
     justify-content: center;
   }
   
+  
   .header p {
     font-family: arial;
     font-size: 18px;
@@ -51,6 +52,10 @@ img {
   }
   
   .interface img {
+    width: 120px;
+    height: 120px;
+  }
+  .items img {
     width: 120px;
     height: 120px;
   }
@@ -85,13 +90,16 @@ img {
   }
   
   .btn-prefight {
+    margin-top: 10px;
     width: 100% !important;
+    font-size: 50px;
   }
   
   .actions {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
   
   .actions a {
@@ -123,11 +131,48 @@ img {
     width: 100%;
     height: 180px;
     background-color: #1d373d;
-    background-image: url("img/arena-bg.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 35vh;
-    visibility: hidden;
+    display: flex;
+    flex-direction:  column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 10px 0;
+  }
+  .arena p {
+  margin: 0 0 10px 0;
+  color: yellow;
+  }
+  #won {
+    color: green;
+    font-size: 40px;
+  }
+  #lost {
+    color: red;
+    font-size: 40px;
+  }
+  #press00 {
+    color: green;
+    font-size: 20px;
+  }
+  #press01 {
+    color: red;
+    font-size: 20px;
+  }
+  #btnnn-lost{
+    background-color: red;
+    border: 2px solid red;
+    border-radius: 15px;
+    font-size: 30px;
+    color: wheat;
+  }
+  #btnnn-won {
+    background-color: green;
+    border: 2px solid green;
+    border-radius: 15px;
+    font-size: 30px;
+    color: wheat;
   }
   
   .enemy {
@@ -171,4 +216,13 @@ img {
     font-size: 12px;
     color: #d5c8af;
     line-height: 20px;
+  }
+  .items {
+    display: flex;
+    justify-content: space-around;
+    
+  }
+  .items a {
+    background-color: #1b1b1b;
+    text-align: center;
   }
